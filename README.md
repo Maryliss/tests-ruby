@@ -1,5 +1,6 @@
 Small exercices in Ruby -- RSpec 3 Edition
 ==========
+Exercices effectués en pair-programming avec NASSRI Hamdi et Marylis Stenger
 
 ### Set up instructions
 
