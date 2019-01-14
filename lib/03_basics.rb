@@ -32,18 +32,13 @@ def array_42 (tab)
     return tab.include?42
 end
 
-tab = []
-def magic_array (tab)
-    tab.flatten
-    tab.sort!
-    tab.each do |x| 
-        x *= 2
-        end
-    tab.each do |x| 
-        if    x%3 == 0
-        tab.delete(x)
-        end
-    tab.uniq
-    tab.sort
-return tab
+tab1 = []
+def magic_array(tab1)
+    tab1 = tab1.flatten
+    tab1= tab1.sort
+    tab1 = tab1.collect{|x| x*2} 
+    tab1 = tab1.delete_if{|x|x%3 == 0}
+    tab1 =tab1.uniq
+    tab = tab1.sort
+    return tab1
 end
